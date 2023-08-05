@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Inicio {% endblock %}
+
+
+
+{%  block content  %}
+
+ <div class="text-center" >
+    <i class="bi bi-alarm"></i>
+    cargando .... 
+  </div>
+ <script type="text/javascript">
+        setTimeout(
+            function() {
+                window.location.href = '/accounts/login';
+
+            }, 5000
+        );
+
+ </script>
+
+{% endblock %}
